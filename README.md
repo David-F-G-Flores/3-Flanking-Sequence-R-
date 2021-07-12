@@ -11,7 +11,8 @@ for (snp in rsIDs) {
                             ,'ensembl_peptide_allele'
                             , 'allele'
                             , 'chr_name'),filters=c('snp_filter','downstream_flank','upstream_flank'),value=list(snip,downstream=50,upstream=50),mart = snpmart, checkFilters=F)
-  Flanks[[snip]] <- flanks
+  Flanks[[snp]] <- flanks
 }
-```
+
 Flanks<-do.call('rbind',Flanks)  ## list to df
+```
