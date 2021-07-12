@@ -14,3 +14,4 @@ for (snp in rsIDs) {
   Flanks[[snip]] <- flanks
 }
 ```
+Flanks<-do.call('rbind',Flanks)  ## list to df
