@@ -1,5 +1,5 @@
 # Flanking-Sequence-R-
-To extract flanking sequence from biomaRt using rsID
+To extract 50bp flanking sequence from biomaRt using rsID.
 
 ```R
 Flanks <- list()
