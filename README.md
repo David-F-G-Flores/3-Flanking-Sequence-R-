@@ -1,2 +1,16 @@
 # Flanking-Sequence-R-
 To extract flanking sequences from biomaRt
+
+```R
+Flanks <- list()
+
+for (snp in rsIDs) {
+  print(snp)
+  flanks <- getBM(attributes=c('refsnp_id'
+                            ,'snp'
+                            ,'ensembl_peptide_allele'
+                            , 'allele'
+                            , 'chr_name'),filters=c('snp_filter','downstream_flank','upstream_flank'),value=list(snip,downstream=50,upstream=50),mart = snpmart, checkFilters=F)
+  Flanks[[snip]] <- flanks
+}
+```
