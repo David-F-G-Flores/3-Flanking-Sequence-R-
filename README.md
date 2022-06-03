@@ -14,5 +14,5 @@ for (snp in rsIDs) {
   Flanks[[snp]] <- flanks
 }
 
-Flanks<-do.call('rbind',Flanks)  ## list to df
+Flanks<-do.call('rbind',Flanks)  ## list to df 
 ```
